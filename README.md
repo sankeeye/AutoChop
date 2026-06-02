@@ -27,14 +27,14 @@ Een simpel automation-script voor Roblox lumber-games. Truck rijdt automatisch p
 1. Open je Roblox lumber-game, ga in je truck
 2. Druk **F6** om AUTO te starten
 3. Tune indien gewenst met de hotkeys (zie hieronder)
-4. Druk **F12** om de info-overlay te verbergen — er blijft alleen een klein gekleurd bolletje zichtbaar
+4. Druk **F10** om de info-overlay te verbergen — er blijft alleen een klein gekleurd bolletje zichtbaar
 
 ## Hotkeys
 
 | Toets | Functie |
 |-------|---------|
 | **F6** | AUTO aan/uit |
-| **F12** | Volledige overlay verbergen / tonen (laat alleen status-bolletje zien) |
+| **F10** | Volledige overlay verbergen / tonen (laat alleen status-bolletje zien) |
 | **PgUp** | Wacht-tijd +0.1s (truck langzamer) |
 | **PgDn** | Wacht-tijd -0.1s (truck sneller) |
 | **F3** | Gas-tijd +0.1s |

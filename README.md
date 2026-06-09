@@ -4,7 +4,9 @@ Een simpel automation-script voor Roblox lumber-games. Truck rijdt automatisch p
 
 ## Download
 
-**[Laatste versie (v1.1)](https://github.com/sankeeye/AutoChop/releases/latest)**
+**[⬇ Laatste versie (v1.2) — Standalone .exe](https://github.com/sankeeye/AutoChop/releases/latest)**
+
+Eén bestand. Geen Python install. Dubbelklikken en spelen.
 
 ## Wat doet het
 
@@ -16,11 +18,12 @@ Een simpel automation-script voor Roblox lumber-games. Truck rijdt automatisch p
 
 ## Installatie
 
-1. Download `AutoChop.zip` van de [releases pagina](https://github.com/sankeeye/AutoChop/releases/latest)
-2. Pak de map ergens uit (bijv. bureaublad)
-3. Rechtsklik `start.bat` → "Als administrator uitvoeren"
-4. Eerste keer: klik "Ja" op de admin-popup. Python en de benodigde packages worden **automatisch geïnstalleerd** (vereist internet, ongeveer 1-2 minuten).
-5. Volgende keren: dubbelklik `start.bat`, overlay verschijnt direct.
+1. Download `AutoChop.exe` van de [releases pagina](https://github.com/sankeeye/AutoChop/releases/latest)
+2. Dubbelklik het bestand
+3. Klik "Ja" op de UAC-popup (admin rechten nodig voor keyboard hooks)
+4. Overlay verschijnt linksboven, druk **F6** om te starten
+
+Geen Python install nodig. Geen pip. Geen zip uitpakken. Eén bestand, klaar.
 
 ## Gebruik
 
@@ -44,15 +47,12 @@ Een simpel automation-script voor Roblox lumber-games. Truck rijdt automatisch p
 ## Vereisten
 
 - Windows 10 / 11
-- Internet (alleen bij eerste run, voor Python install)
 - Admin rechten (voor globale keyboard hooks)
+- ~10 MB schijfruimte
 
-## Bestanden in de release
+## Voor wie liever de source heeft
 
-- `auto_chop.py` — het Python script
-- `start.bat` — auto-installer + launcher (regelt Python + packages zelf)
-- `LEESMIJ.txt` — beknopte instructies (Nederlands)
-- `LICENSE` — MIT licentie
+De oudere release **v1.1** bevat de Python source plus build-scripts (`build_exe.bat` met PyInstaller, `build_nuitka.bat` met Nuitka). Daarmee kun je zelf compileren of de code aanpassen.
 
 ## Disclaimer
 

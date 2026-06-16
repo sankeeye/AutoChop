@@ -4,7 +4,7 @@ Een simpel automation-script voor Roblox lumber-games. Truck rijdt automatisch p
 
 ## Download
 
-**[⬇ Laatste versie (v1.2) — Standalone .exe](https://github.com/sankeeye/AutoChop/releases/latest)**
+**[⬇ Laatste versie (v1.3) — Standalone .exe](https://github.com/sankeeye/AutoChop/releases/latest)**
 
 Eén bestand. Geen Python install. Dubbelklikken en spelen.
 
@@ -15,11 +15,22 @@ Eén bestand. Geen Python install. Dubbelklikken en spelen.
 - Draaien doe je zelf met A/D
 - Snelheid is in real-time tunebaar via hotkeys
 - Overlay kan verborgen worden tot een klein bolletje (groen = aan, rood = uit)
+- **Auto-stop timer**: stopt automatisch na 15 min (instelbaar) — geen eindeloos draaien als je AFK gaat
+
+## Antivirus waarschuwing
+
+Windows Defender kan AutoChop.exe ten onrechte als malware flaggen. Dit is een **false positive** omdat Nuitka-compiled .exes met keyboard hooks vaak verdacht lijken voor antivirus-software. Het is **veilig**.
+
+Om door te gaan bij de SmartScreen-popup:
+1. Klik **"Meer info"**
+2. Klik **"Toch uitvoeren"**
+
+Of voeg `AutoChop.exe` toe aan je Defender-uitsluitingen.
 
 ## Installatie
 
 1. Download `AutoChop.exe` van de [releases pagina](https://github.com/sankeeye/AutoChop/releases/latest)
-2. Dubbelklik het bestand
+2. Dubbelklik het bestand (klik door SmartScreen-waarschuwing heen indien getoond)
 3. Klik "Ja" op de UAC-popup (admin rechten nodig voor keyboard hooks)
 4. Overlay verschijnt linksboven, druk **F6** om te starten
 
@@ -28,16 +39,19 @@ Geen Python install nodig. Geen pip. Geen zip uitpakken. Eén bestand, klaar.
 ## Gebruik
 
 1. Open je Roblox lumber-game, ga in je truck
-2. Druk **F6** om AUTO te starten
+2. Druk **F6** om AUTO te starten (timer begint te lopen, default 15 min)
 3. Tune indien gewenst met de hotkeys (zie hieronder)
 4. Druk **F10** om de info-overlay te verbergen — er blijft alleen een klein gekleurd bolletje zichtbaar
+5. Na 15 minuten stopt AUTO automatisch (of druk F6 om eerder te stoppen)
 
 ## Hotkeys
 
 | Toets | Functie |
 |-------|---------|
-| **F6** | AUTO aan/uit |
+| **F6** | AUTO aan/uit (reset ook de timer) |
 | **F10** | Volledige overlay verbergen / tonen (laat alleen status-bolletje zien) |
+| **F1** | Max-runtime +1 minuut |
+| **F2** | Max-runtime -1 minuut |
 | **PgUp** | Wacht-tijd +0.1s (truck langzamer) |
 | **PgDn** | Wacht-tijd -0.1s (truck sneller) |
 | **F3** | Gas-tijd +0.1s |
@@ -49,6 +63,10 @@ Geen Python install nodig. Geen pip. Geen zip uitpakken. Eén bestand, klaar.
 - Windows 10 / 11
 - Admin rechten (voor globale keyboard hooks)
 - ~10 MB schijfruimte
+
+## Voor wie liever de source heeft
+
+De oudere release **v1.1** bevat de Python source plus build-scripts (`build_exe.bat` met PyInstaller, `build_nuitka.bat` met Nuitka). Daarmee kun je zelf compileren of de code aanpassen.
 
 ## Disclaimer
 

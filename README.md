@@ -64,10 +64,6 @@ Geen Python install nodig. Geen pip. Geen zip uitpakken. Eén bestand, klaar.
 - Admin rechten (voor globale keyboard hooks)
 - ~10 MB schijfruimte
 
-## Voor wie liever de source heeft
-
-De oudere release **v1.1** bevat de Python source plus build-scripts (`build_exe.bat` met PyInstaller, `build_nuitka.bat` met Nuitka). Daarmee kun je zelf compileren of de code aanpassen.
-
 ## Disclaimer
 
 Externe automation van Roblox kan tegen de Terms of Service zijn. Hyperion (Roblox' anti-cheat) kan synthetische input detecteren. Gebruik op eigen risico, het liefst niet op accounts die je belangrijk vindt.

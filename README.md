@@ -4,7 +4,7 @@ Een simpel automation-script voor Roblox lumber-games. Truck rijdt automatisch p
 
 ## Download
 
-**[⬇ Laatste versie (v1.3) — Standalone .exe](https://github.com/sankeeye/AutoChop/releases/latest)**
+**[⬇ Laatste versie (v1.4) — Standalone .exe](https://github.com/sankeeye/AutoChop/releases/latest)**
 
 Eén bestand. Geen Python install. Dubbelklikken en spelen.
 
@@ -14,8 +14,12 @@ Eén bestand. Geen Python install. Dubbelklikken en spelen.
 - Q wordt elke 250ms gedrukt — de game chopt automatisch als er een boom in range is
 - Draaien doe je zelf met A/D
 - Snelheid is in real-time tunebaar via hotkeys
-- Overlay kan verborgen worden tot een klein bolletje (groen = aan, rood = uit)
-- **Auto-stop timer**: stopt automatisch na 15 min (instelbaar) — geen eindeloos draaien als je AFK gaat
+- **Instellingen worden opgeslagen** — één keer tunen, daarna nooit meer
+- **Pauze-knop (F7)** — tijdelijk stoppen zonder dat de timer doorloopt
+- **Geluidssignaal** als de auto-stop timer afloopt — handig bij AFK
+- **Auto-update check** — script meldt automatisch als er een nieuwere versie is
+- Overlay kan verborgen worden tot een klein bolletje (groen = aan, geel = pauze, rood = uit)
+- **Auto-stop timer**: stopt automatisch na 15 min (instelbaar)
 
 ## Antivirus waarschuwing
 
@@ -40,16 +44,19 @@ Geen Python install nodig. Geen pip. Geen zip uitpakken. Eén bestand, klaar.
 
 1. Open je Roblox lumber-game, ga in je truck
 2. Druk **F6** om AUTO te starten (timer begint te lopen, default 15 min)
-3. Tune indien gewenst met de hotkeys (zie hieronder)
-4. Druk **F10** om de info-overlay te verbergen — er blijft alleen een klein gekleurd bolletje zichtbaar
-5. Na 15 minuten stopt AUTO automatisch (of druk F6 om eerder te stoppen)
+3. Tune indien gewenst met de hotkeys (zie hieronder) — instellingen blijven bewaard
+4. Druk **F10** om de info-overlay te verbergen — alleen een klein gekleurd bolletje blijft over
+5. Druk **F7** voor pauze (zonder timer reset)
+6. Na 15 minuten stopt AUTO automatisch met geluidssignaal
 
 ## Hotkeys
 
 | Toets | Functie |
 |-------|---------|
-| **F6** | AUTO aan/uit (reset ook de timer) |
+| **F6** | AUTO start/stop (reset timer) |
+| **F7** | PAUZE aan/uit (timer pauzeert ook) |
 | **F10** | Volledige overlay verbergen / tonen (laat alleen status-bolletje zien) |
+| **F11** | Download-pagina openen (bij update beschikbaar) |
 | **F1** | Max-runtime +1 minuut |
 | **F2** | Max-runtime -1 minuut |
 | **PgUp** | Wacht-tijd +0.1s (truck langzamer) |
@@ -58,10 +65,19 @@ Geen Python install nodig. Geen pip. Geen zip uitpakken. Eén bestand, klaar.
 | **F4** | Gas-tijd -0.1s |
 | **F8** | Script volledig stoppen |
 
+## Bolletje-kleuren
+
+| Kleur | Betekenis |
+|-------|-----------|
+| 🟢 Groen | AUTO actief en draait |
+| 🟡 Geel | Gepauzeerd (F7) |
+| 🔴 Rood | AUTO uit |
+
 ## Vereisten
 
 - Windows 10 / 11
 - Admin rechten (voor globale keyboard hooks)
+- Internet (alleen voor update-check; werkt ook offline)
 - ~10 MB schijfruimte
 
 ## Disclaimer
